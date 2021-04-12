@@ -18,7 +18,7 @@ Sets a event function that executes each time someone sends message. Also, retur
 `func` is `function(msg){}`\
 `msg.a` is message.\
 `msg.p` is a info about message sender.
-#### pijs.chat.clearOnMsg(eventIndex
+#### pijs.chat.clearOnMsg(eventIndex);
 Clears a onMsg event. (Requires event index).
 ### Piano
 #### pijs.piano.pressKey(noteKey, volume);
