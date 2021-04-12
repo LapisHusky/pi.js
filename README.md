@@ -1,5 +1,7 @@
 # 𝓟𝓲.𝑗𝑠 API (Under development)
 Custom userscript API for MPP. Licensed under MIT.
+## How to install
+Just put 𝓟𝓲.𝑗𝑠 lightweight code to your userscript.
 
 ## Documentation
 ### Chat
