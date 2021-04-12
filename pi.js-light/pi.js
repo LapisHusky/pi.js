@@ -1,1 +1,2 @@
+/*𝓟𝓲.𝑗𝑠 lightweight*/
 const pijs={chat:{}};pijs.chat.send=(s=>{MPP.client.sendArray([{m:"a",message:s}])}),pijs.chat.local=((s,a)=>{var t=$("#chat").children(0).html(),e=a||"#FFFFFF";$("#chat").children().eq(0).html(`${t}<li style="color: ${e}; opacity: 1;"><span class="message">${s}</span></li>`)}),pijs.chat.setUserChatOutput=(s=>{MPP.chat.send=s}),pijs.piano={},pijs.piano.pressKey=((s,a)=>{MPP.press(s,a)}),pijs.piano.pressLocal=((s,a)=>{MPP.piano.play(s,a,MPP.client.getOwnParticipant(),0)});
