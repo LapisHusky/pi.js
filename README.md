@@ -16,6 +16,6 @@ Presses note on piano which everyone hear.
 Same as, pijs.piano.pressKey, but only you hear your note 
 
 ## Code
-**Source code:** https://github.com/SuperPowerPlumber/pi.js/tree/main/pi.js-src
+**Source code:** [pi.js-src/pi.js](https://github.com/SuperPowerPlumber/pi.js/tree/main/pi.js-src/pi.js)
 
-**Source code (Lightweight):** https://github.com/SuperPowerPlumber/pi.js/tree/main/pi.js-light
+**Source code (Lightweight):** [pi.js-light/pi.js](https://github.com/SuperPowerPlumber/pi.js/tree/main/pi.js-light/pi.js)
