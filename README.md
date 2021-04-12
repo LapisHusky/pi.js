@@ -13,6 +13,11 @@ Makes local customizable messages in chat which only you can see. Supports HTML.
 #### pijs.chat.setPlayerChatOutput(func);
 Using this you can change the message output function which executes after pressing enter key when you send message.\
 `func` is `function(message){...}`
+#### pijs.chat.setOnMsgs(func);
+Sets a event function that executes each time someone sends message.\
+`func` is `function(msg){}`\
+`msg.a` is message.\
+`msg.p` is a info about message sender.
 ### Piano
 #### pijs.piano.pressKey(noteKey, volume);
 Presses note on piano which everyone hear.
