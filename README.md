@@ -7,4 +7,4 @@ Sends your messages to everyone in chat.
 #### pijs.chat.local(message, color);
 Makes local custom messages in chat which only you can see. Supports HTML.
 #### pijs.chat.setPlayerChatOutput(func);
-Using this you can change the output function which executes after pressing enter key when you send message.
+Using this you can change the message output function which executes after pressing enter key when you send message.
