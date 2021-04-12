@@ -1,3 +1,2 @@
-# 𝓟𝓲.𝑗𝑠
-Custom userscript API for MPP.
-### Documentation
+# 𝓟𝓲.𝑗𝑠 - Custom userscript API for MPP.
+## Documentation
