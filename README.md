@@ -3,4 +3,4 @@ Custom userscript API for MPP.
 ## Documentation
 ### Chat
 #### pijs.chat.send(message)
-
+Sends your messages to everyone.
