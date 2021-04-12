@@ -1,6 +1,6 @@
 /*𝓟𝓲.𝑗𝑠 (Under development)*/
 
-if(typeof pijs === undefined){
+if(typeof pijs === "undefined"){
 
 const pijs = {};
 
