@@ -18,6 +18,16 @@ pijs.chat.setPlayerChatOutput = (func) =>{
     MPP.chat.send = func;
 };
 
+pijs.chat.setOnMsg = (func) =>{
+    MPP.client.on("a", func);
+    var chatEvents = MPP.client_events["a"];
+    return chatEvents[chatEvents.length - 1];
+};
+
+pijs.chat.clearOnMsg = (eventIndex) =>{
+    MPP.client._events["a"].splice(eventIndex, 1);
+};
+
 /*piano*/
 pijs.piano = {};
 pijs.piano.pressKey = (noteKey, volume) =>{
@@ -27,3 +37,5 @@ pijs.piano.pressKey = (noteKey, volume) =>{
 pijs.piano.pressLocal = (noteKey, volume) =>{
     MPP.piano.play(noteKey, volume, MPP.client.getOwnParticipant(), 0);
 };
+
+pijs.piano.keys = MPP.piano.keys;
