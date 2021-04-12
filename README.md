@@ -1,5 +1,6 @@
 # 𝓟𝓲.𝑗𝑠 API (Under development)
 Custom userscript API for MPP. Licensed under MIT.\
+\
 **How to install:**\
 Just put 𝓟𝓲.𝑗𝑠 [lightweight code](https://github.com/SuperPowerPlumber/pi.js/tree/main/pi.js-light/pi.js) to your userscript.
 
@@ -19,5 +20,3 @@ Same as, pijs.piano.pressKey, but only you hear your note
 
 ## Code
 **Source code:** [pi.js-src/pi.js](https://github.com/SuperPowerPlumber/pi.js/tree/main/pi.js-src/pi.js)
-
-**Source code (Lightweight):** [pi.js-light/pi.js](https://github.com/SuperPowerPlumber/pi.js/tree/main/pi.js-light/pi.js)
