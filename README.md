@@ -17,7 +17,9 @@ Using this you can change the message output function which executes after press
 #### pijs.piano.pressKey(noteKey, volume);
 Presses note on piano which everyone hear.
 #### pijs.piano.pressLocal(noteKey, volume);
-Same as, pijs.piano.pressKey, but only you hear your note 
+Same as, pijs.piano.pressKey, but only you hear your notes.
+#### pijs.piano.keys
+Returns a list with all piano keys codes.
 
 ## Code
 **Source code:** [pi.js-src/pi.js](https://github.com/SuperPowerPlumber/pi.js/tree/main/pi.js-src/pi.js)
