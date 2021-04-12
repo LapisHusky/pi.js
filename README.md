@@ -1,4 +1,4 @@
-# 𝓟𝓲.𝑗𝑠 API
+# 𝓟𝓲.𝑗𝑠 API (Under development)
 Custom userscript API for MPP. Licensed under MIT.
 
 ## Documentation
