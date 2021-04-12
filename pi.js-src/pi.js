@@ -1,7 +1,5 @@
 /*𝓟𝓲.𝑗𝑠 (Under development)*/
 
-if(typeof pijs === "undefined"){
-
 const pijs = {};
 
 /*chat*/
@@ -42,4 +40,14 @@ pijs.piano.pressLocal = (noteKey, volume) =>{
 
 pijs.piano.keys = MPP.piano.keys;
 
-}
+/*client*/
+pijs.client = {};
+pijs.client.sendArray = (arrayType, objArray) =>{
+    var sendArrayArgs = {m:arrayType};
+    Object.assign(sendArrayArgs, objArray);
+    MPP.client.sendArray([sendArrayArgs]);
+};
+
+pijs.client.on = (eventType, eventFunc) =>{
+    MPP.client.on(eventType, eventFunc);
+};
