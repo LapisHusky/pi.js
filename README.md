@@ -1,5 +1,5 @@
 # 𝓟𝓲.𝑗𝑠 API
-Custom userscript API for MPP.
+Custom userscript API for MPP. Licensed under MIT.
 
 ## Documentation
 ### Chat
