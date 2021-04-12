@@ -5,7 +5,7 @@ Custom userscript API for MPP. Licensed under MIT.
 Just put 𝓟𝓲.𝑗𝑠 [lightweight code](https://github.com/SuperPowerPlumber/pi.js/tree/main/pi.js-light/pi.js) to your userscript.
 
 ## Documentation
-### Chat
+### pijs.chat
 #### pijs.chat.send(message);
 Sends your messages to everyone in chat.
 #### pijs.chat.local(message, color);
@@ -20,7 +20,7 @@ Sets a event function that executes each time someone sends message. Also, retur
 * `msg.p` is a info about message sender.
 #### pijs.chat.clearOnMsg(eventIndex);
 Clears a onMsg event. (Requires event index).
-### Piano
+### pijs.piano
 #### pijs.piano.pressKey(noteKey, volume);
 Presses note on piano which everyone hear.
 #### pijs.piano.pressLocal(noteKey, volume);
