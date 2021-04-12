@@ -1,5 +1,7 @@
 /*𝓟𝓲.𝑗𝑠 (Under development)*/
 
+if(typeof pijs === undefined){
+
 const pijs = {};
 
 /*chat*/
@@ -39,3 +41,5 @@ pijs.piano.pressLocal = (noteKey, volume) =>{
 };
 
 pijs.piano.keys = MPP.piano.keys;
+
+}
