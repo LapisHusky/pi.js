@@ -16,8 +16,9 @@ Using this you can change the message output function which executes after press
 #### pijs.chat.setOnMsg(func);
 Sets a event function that executes each time someone sends message. Also, returns a index of the event. \
 `func` is `function(msg){}`\
-`msg.a` is message.\
-`msg.p` is a info about message sender.
+\
+* `msg.a` is message.
+* `msg.p` is a info about message sender.
 #### pijs.chat.clearOnMsg(eventIndex);
 Clears a onMsg event. (Requires event index).
 ### Piano
