@@ -9,8 +9,7 @@ pijs.chat.send = (message) =>{
 
 pijs.chat.local = (message, color) =>{
     var msgs = $("#chat").children(0).html();
-    var msgColor = color || "#FFFFFF";
-    
+    var msgColor = color || "#FFFFFF"; 
     $("#chat").children().eq(0).html(`${msgs}<li style="color: ${msgColor}; opacity: 1;"><span class="message">${message}</span></li>`);
 };
 
