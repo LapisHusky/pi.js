@@ -1,2 +1,2 @@
-# 𝑝𝑖.js
+# 𝑝𝑖.𝘫𝘴
 Userscript API for MPP
