@@ -17,4 +17,4 @@ Same as, pijs.piano.pressKey, but only you hear your note
 
 ## Code
 **Source code:** https://github.com/SuperPowerPlumber/pi.js/tree/main/pi.js-src
-**Lightweight code:** https://github.com/SuperPowerPlumber/pi.js/tree/main/pi.js-light
+**Source code (Lightweight):** https://github.com/SuperPowerPlumber/pi.js/tree/main/pi.js-light
