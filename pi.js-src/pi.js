@@ -20,7 +20,7 @@ pijs.chat.setPlayerChatOutput = (func) =>{
 
 pijs.chat.setOnMsg = (func) =>{
     MPP.client.on("a", func);
-    var chatEvents = MPP.client_events["a"];
+    var chatEvents = MPP.client._events["a"];
     return chatEvents[chatEvents.length - 1];
 };
 
