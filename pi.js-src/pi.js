@@ -1,6 +1,6 @@
 /*𝓟𝓲.𝑗𝑠 (Under development)*/
 
-var pijs = {};
+window.pijs = {};
 
 /*chat*/
 pijs.chat = {};
