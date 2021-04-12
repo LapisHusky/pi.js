@@ -2,7 +2,7 @@
 Custom userscript API for MPP. Licensed under MIT.
 
 ### How to install:
-Just put 𝓟𝓲.𝑗𝑠 [lightweight code](https://github.com/SuperPowerPlumber/pi.js/tree/main/pi.js-light/pi.js) to your userscript.
+Just put 𝓟𝓲.𝑗𝑠 [lightweight code](https://github.com/SuperPowerPlumber/pi.js/tree/main/pi.js-light/pi.js) to your userscript code.
 
 ## Documentation
 ### pijs.chat
@@ -15,7 +15,7 @@ Using this you can change the message output function which executes after press
 \
 `func` is `function(message){...}`
 #### pijs.chat.setOnMsg(func);
-Sets a event function that executes each time someone (you too) sends message. Also, returns a index of the event created using `setOnMsg`.\
+Sets a event function that executes each time someone (you too) sends message. Also, returns a index of the event created using `setOnMsg`. \
 \
 `func` is `function(msg){}`
 * `msg.a` is message.
