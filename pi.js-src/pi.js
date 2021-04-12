@@ -14,7 +14,7 @@ pijs.chat.local = (message, color) =>{
     $("#chat").children().eq(0).html(`${msgs}<li style="color: ${msgColor}; opacity: 1;"><span class="message">${message}</span></li>`);
 };
 
-pijs.chat.setUserChatOutput = (func) =>{
+pijs.chat.setPlayerChatOutput = (func) =>{
     MPP.chat.send = func;
 };
 
