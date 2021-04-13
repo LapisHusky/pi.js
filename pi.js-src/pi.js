@@ -28,6 +28,23 @@ pijs.chat.clearOnMsg = (eventIndex) =>{
     MPP.client._events["a"].splice(eventIndex, 1);
 };
 
+var recentMessagesCount = 0;
+var chatBuffer = [];
+function sendMessage(message) {
+    chatBuffer.push(message);
+    if (recentMessagesCount < (MPP.client.isOwner() ? 10 : 4)) sendFromBuffer();
+}
+function sendFromBuffer() {
+    if (chatBuffer.length === 0) return;
+    recentMessagesCount++;
+    MPP.chat.send(chatBuffer[0]);
+    chatBuffer.shift();
+    setTimeout(() => {
+        recentMessagesCount--;
+        sendFromBuffer();
+    }, MPP.client.isOwner() ? 2500 : 6500);
+}
+
 /*piano*/
 pijs.piano = {};
 pijs.piano.pressKey = (noteKey, volume) =>{
@@ -52,19 +69,3 @@ pijs.client.on = (eventType, eventFunc) =>{
     MPP.client.on(eventType, eventFunc);
 };
 
-var recentMessagesCount = 0;
-var chatBuffer = [];
-function sendMessage(message) {
-    chatBuffer.push(message);
-    if (recentMessagesCount < (MPP.client.isOwner() ? 10 : 4)) sendFromBuffer();
-}
-function sendFromBuffer() {
-    if (chatBuffer.length === 0) return;
-    recentMessagesCount++;
-    MPP.chat.send(chatBuffer[0]);
-    chatBuffer.shift();
-    setTimeout(() => {
-        recentMessagesCount--;
-        sendFromBuffer();
-    }, MPP.client.isOwner() ? 2500 : 6500);
-}
