@@ -5,7 +5,7 @@ window.pijs = {};
 /*chat*/
 pijs.chat = {};
 pijs.chat.send = (message) =>{
-    MPP.client.sendArray([{m:"a", message: message}]);
+    sendMessage(message);
 };
 
 pijs.chat.local = (message, color) =>{
@@ -51,3 +51,20 @@ pijs.client.sendArray = (arrayType, objArray) =>{
 pijs.client.on = (eventType, eventFunc) =>{
     MPP.client.on(eventType, eventFunc);
 };
+
+var recentMessagesCount = 0;
+var chatBuffer = [];
+function sendMessage(message) {
+    chatBuffer.push(message);
+    if (recentMessagesCount < (MPP.client.isOwner() ? 10 : 4)) sendFromBuffer();
+}
+function sendFromBuffer() {
+    if (chatBuffer.length === 0) return;
+    recentMessagesCount++;
+    MPP.chat.send(chatBuffer[0]);
+    chatBuffer.shift();
+    setTimeout(() => {
+        recentMessagesCount--;
+        sendFromBuffer();
+    }, MPP.client.isOwner() ? 2500 : 6500);
+}
